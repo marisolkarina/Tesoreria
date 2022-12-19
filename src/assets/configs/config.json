@@ -1,0 +1,18 @@
+{
+  "production": false,
+  "productName": "extranet-web-frontend",
+  "environment": "desarrollo",
+  "environmentName": "Desarrollo",
+  "coreServiceUrl": "https://rgw.desa.kepler.sura.net.pe/sura-integra-desa-extranet/proyecto-extranet/v1",
+  "xibmclientid":"480cc676500d79e20c8311ae70347051",
+  "xibmclientsecret": "9c9668ba22c802629a93d31d94158b9d",
+  "azureAdTenantId": "a24df628-0e3d-4afa-8b77-946282420c18",
+  "azureAdClientId": "20a4fb77-d38c-4850-8265-098308ec9a92",
+  "azureAdRedirectUri": "https://extranet-desa.sura.net.pe",
+  "elkApmServer": "https://f9hpl9db80.execute-api.us-west-2.amazonaws.com/dev/elk/apmserver",
+  "elkApmDistributedTracingOrigins": [
+    "https://api.us-south.apiconnect.appdomain.cloud"
+  ],
+  "elkActive": true,
+  "elkInstrument": true
+}
