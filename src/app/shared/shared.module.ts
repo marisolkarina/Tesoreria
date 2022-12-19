@@ -10,6 +10,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { SlidebarComponent } from './components/slidebar/slidebar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SlidebarComponent } from './components/slidebar/slidebar.component';
     LogoComponent,
     MainMenuComponent,
     ModalComponent,
-    SlidebarComponent
+    SlidebarComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule,
