@@ -14,7 +14,7 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  OpenSidebar = (status) =>{
+  OpenSidebar = (status:boolean) =>{
 		this.sidebarShow = status;
 	}
 

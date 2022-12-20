@@ -1,1 +1,28 @@
-<p>search-result works!</p>
+<div class="page search_result_page">
+    <app-load-messages [text]="status" *ngIf="ShowLoading"></app-load-messages>
+    <app-breadcumb [items]="bread"></app-breadcumb>
+    <div class="page_content BgWhite p-4 Mhght350 Bradius10">
+        <p class="ClBlue">Resultados</p>
+        <div class="table-responsive-sm">
+            <table class="table table-hover">
+                <caption>Se encontró {{affiliatesdata.length}} {{affiliatesdata.length === 1?'Resultado':'Resultados'}} </caption>
+                <thead>
+                    <tr class="BgBlue ClWhite">
+                        <th scope="col">Nombres y Apellidos</th>
+                        <th scope="col">Tipo Doc.</th>
+                        <th scope="col">Núm Doc.</th>
+                        <th scope="col">CUSPP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let affiliate of affiliatesdata" (click)="ClientDetail(affiliate.codigoPersona,affiliate.cuspp,'WEXTWEB',user.code)">
+                        <td class="ClGray" scope="row"> {{affiliate.nombrePrimero + ' ' + affiliate.nombreSegundo + ' ' + affiliate.apellidoPaterno + ' ' + affiliate.apellidoMaterno}} </td>
+                        <td class="ClGray"> {{affiliate.identificacionTipo}} </td>
+                        <td class="ClGray"> {{affiliate.identificacionNumero}} </td>
+                        <td class="ClGray"> {{affiliate.cuspp}} </td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+    </div> 
+</div>

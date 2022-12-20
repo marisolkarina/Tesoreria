@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-load-messages',
-  templateUrl: './load-messages.component.html',
-  styleUrls: ['./load-messages.component.css']
+	selector: 'app-load-messages',
+	templateUrl: './load-messages.component.html',
+	styleUrls: ['./load-messages.component.css']
 })
 export class LoadMessagesComponent implements OnInit {
 
-  constructor() { }
+	@Input() text?:string;
 
-  ngOnInit(): void {
-  }
+	constructor() { }
+
+	ngOnInit(): void {
+	}
 
 }

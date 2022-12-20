@@ -9,7 +9,6 @@ import { LoadMessagesComponent } from './components/load-messages/load-messages.
 import { LogoComponent } from './components/logo/logo.component';
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { ModalComponent } from './components/modal/modal.component';
-import { SlidebarComponent } from './components/slidebar/slidebar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
@@ -22,12 +21,14 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     LogoComponent,
     MainMenuComponent,
     ModalComponent,
-    SlidebarComponent,
     SidebarComponent
   ],
   imports: [
     CommonModule,
     SharedRoutingModule
+  ],
+  exports: [
+    MainMenuComponent
   ]
 })
 export class SharedModule { }
